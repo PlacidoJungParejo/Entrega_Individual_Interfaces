@@ -11,11 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Genos:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Añadido el css para el video*/
+        .video {
+            width: 100%;
+            height: auto;
+        }
+
+        .contenedor-video {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .contenedor-video video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+        <!-- Cambiado el logo a svg -->
+        <a href="index.html"><img src="./images/logo.svg" alt="logo" class="logo"></a>
         <div class="paginas">
+            <!-- cambiadas las imagenes por iconos de fontasewome-->
             <a href="sobre_nosotros.html"><i class="fa-solid fa-address-card"></i>
             <p>Sobre Nosotros</p></a>
             <a href="generos.html"><i class="fa-solid fa-filter"></i>
@@ -34,7 +53,7 @@
         <div class="migadepan titulo">
             <p>INICIO</p>
         </div>
-        <header class="headerinicio">
+        <header class="headerinicio">       
                 <p class="subtitulo">WIKIGAMES</p>
         </header>
         <section>
@@ -55,38 +74,88 @@
             <div class="mejorcategoria">
                 <h1 class="titulo">MEJORES JUEGOS POR CATEGORÍA</h1>
                 <div class="mjuegoscat">
-                    <article>
-                        <img src="./images/wow.png" alt="wow">
-                        <p class="subtitulo">MMORPG</p>
-                    </article>
-                    <article>
-                        <img src="./images/phasmophobia.png" alt="phasmo">
-                        <p class="subtitulo">TERROR</p>
-                    </article>
-                    <article>
-                        <img src="./images/darksouls.png" alt="darksouls">
-                        <p class="subtitulo">SOULSLIKE</p>
-                    </article>
-                    <article>
-                        <img src="./images/isaac.png" alt="isaac">
-                        <p class="subtitulo">ROGUELIKE</p>
-                    </article>
-                    <article>
-                        <img src="./images/mario.png" alt="mario">
-                        <p class="subtitulo">PLATAFORMAS</p>
-                    </article>
-                    <article>
-                        <img src="./images/minecraft.png" alt="minecraft">
-                        <p class="subtitulo">SANDBOX</p>
-                    </article>
-                    <article>
-                        <img src="./images/tarkov.png" alt="tarkov">
-                        <p class="subtitulo">SHOOTER</p>
-                    </article>
-                    <article>
-                        <img src="./images/popcorn.png" alt="popcorn">
-                        <p class="subtitulo">BATTLE ROYALE</p>
-                    </article>
+                    <!-- Referenciadas todas las imagenes y cambiadas por imagenes de pxhere -->
+                    <figure>
+                        <article>
+                            <img src="./images/wow2.jpg" alt="wow">
+                            <p class="subtitulo">MMORPG</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>  
+                    <figure>
+                        <article>
+                            <img src="./images/phasmophobia2.jpg" alt="phasmo">
+                            <p class="subtitulo">TERROR</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/darksouls2.jpg" alt="darksouls">
+                            <p class="subtitulo">SOULSLIKE</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/isaac2.jpg" alt="isaac">
+                            <p class="subtitulo">ROGUELIKE</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/mario2.jpg" alt="mario">
+                            <p class="subtitulo">PLATAFORMAS</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/minecraft2.jpg" alt="minecraft">
+                            <p class="subtitulo">SANDBOX</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/tarkov2.jpg" alt="tarkov">
+                            <p class="subtitulo">SHOOTER</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <article>
+                            <img src="./images/popcorn.jpg" alt="popcorn">
+                            <p class="subtitulo">BATTLE ROYALE</p>
+                        </article>
+                        <figcaption>
+                            Imagen bajo <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="video">
+                <div class="contenedor-video">
+                    <video controls>
+                        <source src="./images/video.mp4" type="video/mp4">
+                        <img src="./images/GettyImages-2112446687.webp" alt="Video fallido">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
                 </div>
             </div>
         </section>
